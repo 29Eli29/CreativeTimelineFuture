@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages</title>
+    <title>Life Plan Timeline</title>
+    <style>
+        /* Existing styles */
+    </style>
 </head>
 <body>
-    <h1>Welcome to GitHub Pages!</h1>
-    <p>This is a placeholder for the GitHub Pages deployment.</p>
+    <h1>Life Plan Timeline</h1>
+    <p>Please enter your Gemini API key below:</p>
+    <input type="text" id="apiKey" placeholder="Add your API key here" />
+
+    <script>
+        const apiKey = document.getElementById('apiKey').value;
+
+        if (!apiKey) {
+            alert('API key is missing. Please enter your key to access AI features.');
+        } else {
+            // Existing AI feature handling code with updates for missing key
+        }
+    </script>
+
+    <!-- Existing table and content -->
+
 </body>
 </html>
