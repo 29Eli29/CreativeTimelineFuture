@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Timeline</title>
-    <style>
-        /* Add your CSS here */
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Creative Timeline</h1>
-        <p>Welcome to our interactive timeline! Explore the history of creativity through various milestones and innovations.</p>
     </header>
     <main>
-        <section>
-            <h2>Timeline Events</h2>
-            <div class="timeline">
-                <!-- Timeline event 1 -->
-                <div class="event">
-                    <h3>Event Title 1</h3>
-                    <p>Description of event 1.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>Milestone 1</h2>
+                    <p>Description for milestone 1.</p>
                 </div>
-                <!-- Timeline event 2 -->
-                <div class="event">
-                    <h3>Event Title 2</h3>
-                    <p>Description of event 2.</p>
+                <div class="timeline-border">
+                    <svg> <!-- Full SVG data for top border -->
+                        <rect width="100%" height="10" fill="#ccc" />
+                    </svg>
                 </div>
-                <!-- Additional events... -->
             </div>
-        </section>
-        <footer>
-            <p>© 2026 Creative Timeline. All rights reserved.</p>
-        </footer>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>Milestone 2</h2>
+                    <p>Description for milestone 2.</p>
+                </div>
+                <div class="timeline-border">
+                    <svg> <!-- Full SVG data for bottom border (GPU/microchip) -->
+                        <rect width="100%" height="10" fill="#ccc" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Continue adding milestone items here -->
+        </div>
+        <button id="addMilestone">Add Milestone</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Summary</h2>
+                <p>From internships to ventures, each phase builds on the strengths and values that define who you are.</p>
+            </div>
+        </div>
     </main>
-    <svg>
-        <!-- Full SVG border data here -->
-        <rect width="100%" height="100%" fill="none" stroke="black" stroke-width="2" />
-    </svg>
+    <script src="script.js"></script>
 </body>
 </html>
