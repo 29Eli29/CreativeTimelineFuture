@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        
+        .timeline {
+            position: relative;
+        }
+        
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+            padding-left: 60px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px #667eea;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 30px;
+            width: 4px;
+            height: 40px;
+            background: #667eea;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .timeline-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Creative Timeline</h1>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Event 1</h3>
+                <p>Add your event description here.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Event 2</h3>
+                <p>Add your event description here.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Event 3</h3>
+                <p>Add your event description here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
